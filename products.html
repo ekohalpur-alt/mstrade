@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | M.S.Trade International</title>
+    <meta name="description" content="Explore our premium range of Power Generation, Industrial Engines, Water Solutions, and more.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+
+    <style>
+      .page-header {
+        padding: 10rem 2rem 6rem;
+        background: var(--bg-tertiary);
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .service-block {
+        padding: 6rem 0;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .service-block:nth-child(even) {
+        background-color: var(--bg-secondary);
+      }
+
+      .service-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+      }
+
+      .service-block:nth-child(even) .service-content {
+        direction: rtl;
+      }
+
+      .service-block:nth-child(even) .service-text {
+        direction: ltr;
+      }
+
+      .service-features {
+        list-style: none;
+        margin-top: 1.5rem;
+      }
+
+      .service-features li {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+        color: var(--text-secondary);
+      }
+
+      .service-features svg {
+        color: var(--brand-green);
+        flex-shrink: 0;
+      }
+
+      .service-image {
+        background: linear-gradient(135deg, var(--border-color), var(--bg-tertiary));
+        height: 350px;
+        border-radius: var(--radius-lg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-display);
+        color: var(--text-tertiary);
+        box-shadow: var(--shadow-lg);
+      }
+
+      @media (max-width: 768px) {
+        .service-content {
+          grid-template-columns: 1fr;
+          direction: ltr !important;
+        }
+      }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="./logo.png" alt="M.S.Trade International - Kirloskar Oil Engines">
+            </a>
+            
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="products.html" class="nav-link active">Products</a>
+                <a href="spares-service.html" class="nav-link">Spares & Service</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+            </nav>
+
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <span id="theme-icon"></span>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Page Header Slideshow -->
+    <section class="slideshow-container">
+        <div class="slide active">
+            <img src="./slide-1.jpeg" class="slide-bg" alt="Slide 1">
+            <div class="slide-content animate-on-scroll fade-in-up">
+                <h1 class="section-title" style="color: white;">Comprehensive Industrial Solutions</h1>
+                <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto; color: white;">Explore our portfolio of top-tier engines, generators, and systems engineered for maximum performance and reliability.</p>
+                <div style="margin-top: 2rem;">
+                    <a href="contact.html" class="btn btn-primary hover-float">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="./slide-2.jpeg" class="slide-bg" alt="Slide 2">
+            <div class="slide-content">
+                <h1 class="section-title" style="color: white;">Powering the Future</h1>
+                <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto; color: white;">Industry-leading equipment to keep your operations running seamlessly worldwide.</p>
+                <div style="margin-top: 2rem;">
+                    <a href="contact.html" class="btn btn-primary hover-float">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="./slide-3.png" class="slide-bg" alt="Slide 3">
+            <div class="slide-content">
+                <h1 class="section-title" style="color: white;">Farm Mechanization</h1>
+                <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto; color: white;">Revolutionizing modern agriculture with powerful and efficient machinery.</p>
+                <div style="margin-top: 2rem;">
+                    <a href="contact.html" class="btn btn-primary hover-float">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="./slide-4.png" class="slide-bg" alt="Slide 4">
+            <div class="slide-content">
+                <h1 class="section-title" style="color: white;">Advanced Water Solutions</h1>
+                <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto; color: white;">Smart pumping systems tailored for agriculture, municipal, and industrial fluid handling.</p>
+                <div style="margin-top: 2rem;">
+                    <a href="contact.html" class="btn btn-primary hover-float">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="./slide-5.png" class="slide-bg" alt="Slide 5">
+            <div class="slide-content">
+                <h1 class="section-title" style="color: white;">Fuji & EPIC Lift Systems</h1>
+                <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto; color: white;">Premium elevator solutions and heavy-duty lifting systems for high-rise buildings and infrastructure.</p>
+                <div style="margin-top: 2rem;">
+                    <a href="contact.html" class="btn btn-primary hover-float">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="./slide-6.png" class="slide-bg" alt="Slide 6">
+            <div class="slide-content">
+                <h1 class="section-title" style="color: white;">High-Efficiency Electric Motors</h1>
+                <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto; color: white;">Reliable rotary power minimizing energy consumption for heavy-duty industrial operations.</p>
+                <div style="margin-top: 2rem;">
+                    <a href="contact.html" class="btn btn-primary hover-float">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="./slide-7.png" class="slide-bg" alt="Slide 7">
+            <div class="slide-content">
+                <h1 class="section-title" style="color: white;">Fire Fighting Systems</h1>
+                <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto; color: white;">Critical life-safety pump engines built to the most rigorous FM-UL certified standards.</p>
+                <div style="margin-top: 2rem;">
+                    <a href="contact.html" class="btn btn-primary hover-float">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slideshow Buttons -->
+        <button class="slide-btn prev" aria-label="Previous Slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="slide-btn next" aria-label="Next Slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        <div class="slide-dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </section>
+
+    <!-- Service 1: Power Gen -->
+    <section id="power-gen" class="service-block">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-text animate-on-scroll fade-in-right">
+                    <h2 class="section-title" style="font-size: 2rem;">Power Generation Solutions</h2>
+                    <p>We provide world-class Gensets ranging from highly compact backup units to massive industrial continuous-power generators. Trusted by leading hospitals, banks, and IT sectors to keep systems online without interruption.</p>
+                    <ul class="service-features">
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> CPCB IV+ Compliant Gensets</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Retrofit Emission Control Devices (RECD)</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Dual Fuel Kits & Generator Electricals</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 1.5rem;">Request Quote</a>
+                </div>
+                <div class="service-image animate-on-scroll fade-in-left" style="background: transparent; box-shadow: none; height: auto; padding: 1rem;">
+                    <img src="./power-gen.png" alt="Power Generation Solutions" style="width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 2: Industrial Engines -->
+    <section id="industrial" class="service-block">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-text animate-on-scroll fade-in-left">
+                    <h2 class="section-title" style="font-size: 2rem;">Industrial Engines</h2>
+                    <p>Heavy-duty engines engineered to withstand the harshest environments. Ideal for earth moving, construction machinery, material handling, and marine applications.</p>
+                    <ul class="service-features">
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Exceptional Torque & Fuel Efficiency</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Marine and Defence Grade Build</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Easy Integration & Low Maintenance</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 1.5rem;">Request Quote</a>
+                </div>
+                <div class="service-image animate-on-scroll fade-in-right">
+                    [Industrial Engine Image Placeholder]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 3: Farm Mechanization -->
+    <section id="farm" class="service-block">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-text animate-on-scroll fade-in-right">
+                    <h2 class="section-title" style="font-size: 2rem;">Farm Mechanization</h2>
+                    <p>Revolutionizing modern agriculture with powerful and efficient machinery. We offer comprehensive solutions that significantly boost agricultural productivity and lower labor costs.</p>
+                    <ul class="service-features">
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Power Tillers & Weeders</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Rotary Tillers & Hand-Held Tools</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Specialized Agricultural Implements</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 1.5rem;">Request Quote</a>
+                </div>
+                <div class="service-image animate-on-scroll fade-in-left">
+                    [Farm Machinery Image Placeholder]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 4: Water Solutions -->
+    <section id="water" class="service-block">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-text animate-on-scroll fade-in-left">
+                    <h2 class="section-title" style="font-size: 2rem;">Water Solutions</h2>
+                    <p>Advanced pumping systems and water management solutions tailored for agriculture, municipal supply, and industrial fluid handling.</p>
+                    <ul class="service-features">
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Diesel Engine Based Pumps</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> High-Capacity Alternators</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Reliable Flow Management</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 1.5rem;">Request Quote</a>
+                </div>
+                <div class="service-image animate-on-scroll fade-in-right">
+                    [Water Solutions Image Placeholder]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 5: Fire Fighting -->
+    <section id="fire" class="service-block">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-text animate-on-scroll fade-in-right">
+                    <h2 class="section-title" style="font-size: 2rem;">Fire Fighting Systems</h2>
+                    <p>Critical life-safety fire pump engines built to the most rigorous standards to protect high-rise buildings, factories, and warehouses.</p>
+                    <ul class="service-features">
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> FM-UL Certified Engines</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Reliable Non-Listed Engine Options</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Advanced Firefighting Calculators</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 1.5rem;">Request Quote</a>
+                </div>
+                <div class="service-image animate-on-scroll fade-in-left">
+                    [Fire Fighting Image Placeholder]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 6: Electric Motors -->
+    <section id="motors" class="service-block">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-text animate-on-scroll fade-in-left">
+                    <h2 class="section-title" style="font-size: 2rem;">Electric Motors</h2>
+                    <p>High-efficiency electric motors designed for heavy-duty industrial operations, providing reliable rotary power while minimizing energy consumption.</p>
+                    <ul class="service-features">
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Energy Efficient Designs</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Robust Industrial Casings</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Low Noise and Vibration</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 1.5rem;">Request Quote</a>
+                </div>
+                <div class="service-image animate-on-scroll fade-in-right">
+                    [Electric Motors Image Placeholder]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 7: Organic Waste Solutions -->
+    <section id="waste" class="service-block">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-text animate-on-scroll fade-in-right">
+                    <h2 class="section-title" style="font-size: 2rem;">Organic Waste Solutions</h2>
+                    <p>Sustainable waste management systems like I-Land that convert organic waste into useful byproducts, ensuring eco-friendly operations for large facilities.</p>
+                    <ul class="service-features">
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Smart I-Land Technology</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Odorless Composting</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Eco-friendly Sustainability</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 1.5rem;">Request Quote</a>
+                </div>
+                <div class="service-image animate-on-scroll fade-in-left">
+                    [Organic Waste Image Placeholder]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 8: Fuji-Lift -->
+    <section id="fuji-lift" class="service-block">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-text animate-on-scroll fade-in-left">
+                    <h2 class="section-title" style="font-size: 2rem;">Fuji-Lift Systems</h2>
+                    <p>Premium elevator solutions featuring Japanese precision and reliability. Perfect for high-end commercial spaces, hotels, and luxury residential complexes.</p>
+                    <ul class="service-features">
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Ultra-Smooth Riding Experience</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Advanced Safety Mechanisms</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Elegant Cabin Designs</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 1.5rem;">Request Quote</a>
+                </div>
+                <div class="service-image animate-on-scroll fade-in-right">
+                    [Fuji-Lift Image Placeholder]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 9: EPIC-Lift -->
+    <section id="epic-lift" class="service-block">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-text animate-on-scroll fade-in-right">
+                    <h2 class="section-title" style="font-size: 2rem;">EPIC-Lift Systems</h2>
+                    <p>Heavy-duty, high-capacity lifting solutions built for industrial facilities, massive warehouses, and hospitals that require robust vertical transportation.</p>
+                    <ul class="service-features">
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Heavy Load Capacity</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Industrial Grade Durability</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Rapid Deployment</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 1.5rem;">Request Quote</a>
+                </div>
+                <div class="service-image animate-on-scroll fade-in-left">
+                    [EPIC-Lift Image Placeholder]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                        <img src="./logo.png" alt="M.S.Trade International - Kirloskar Oil Engines">
+                    </a>
+                    <p style="font-size: 0.875rem;">Premium industrial solutions for power generation, agriculture, and infrastructure worldwide.</p>
+                    <div class="social-links" style="margin-top: 1.5rem;">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html#power-gen">Power Gen</a></li>
+                        <li><a href="products.html#industrial">Industrial Engines</a></li>
+                        <li><a href="products.html#farm">Farm Mechanization</a></li>
+                        <li><a href="products.html#water">Water Solutions</a></li>
+                        <li><a href="products.html#fire">Fire Fighting</a></li>
+                        <li><a href="products.html#motors">Electric Motors</a></li>
+                        <li><a href="products.html#waste">Organic Waste Solutions</a></li>
+                        <li><a href="products.html#fuji-lift">Fuji-Lift</a></li>
+                        <li><a href="products.html#epic-lift">EPIC-Lift</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li style="display: flex; gap: 0.5rem; color: var(--text-secondary);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <div style="display: flex; flex-direction: column;">
+                                <span>9858020148</span>
+                                <span>9851320148</span>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 0.5rem; color: var(--text-secondary);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            info@mstrade.com
+                        </li>
+                        <li style="display: flex; gap: 0.5rem; color: var(--text-secondary);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <span><strong>Head Office:</strong> Nepalgunj-18, Karkando Banke, Near old Yatayat Office</span>
+                                <span><strong>Corporate Office:</strong> Sanepa Lalitpur, Kathmandu Nepal</span>
+                                <span><strong>Branch Offices:</strong> Dhangadhi, Kailali, Dang, Surkhet, Kohalpur</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 2.5rem; margin-top: 2.5rem; border-top: 1px solid var(--border-color);">
+                <h4 style="color: var(--text-secondary); font-size: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin: 0;">Authorized Importer & Dealer For Nepal</h4>
+            </div>
+            <div class="footer-logos" style="border-top: none; padding-top: 1.5rem; margin-top: 0;">
+                <img src="./footer-1.png" alt="Brand Logo 1" class="footer-logo">
+                <img src="./footer-2.jpeg" alt="Brand Logo 2" class="footer-logo">
+                <img src="./footer-3.png" alt="Brand Logo 3" class="footer-logo">
+                <img src="./footer-4.jpeg" alt="Brand Logo 4" class="footer-logo">
+                <img src="./footer-5.jpeg" alt="Brand Logo 5" class="footer-logo">
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 M.S.Trade International. All rights reserved.</p>
+                <div style="display: flex; gap: 1.5rem;">
+                    <a href="#" style="color: var(--text-tertiary); font-size: 0.875rem;">Privacy Policy</a>
+                    <a href="#" style="color: var(--text-tertiary); font-size: 0.875rem;">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Back to top -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

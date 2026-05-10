@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | M.S.Trade International</title>
+    <meta name="description" content="Get in touch with M.S.Trade International for inquiries, quotes, and support.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+
+    <style>
+      .page-header {
+        padding: 10rem 2rem 6rem;
+        background: var(--bg-tertiary);
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+      }
+
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .info-card {
+        background-color: var(--bg-secondary);
+        padding: 2rem;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--border-color);
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      .info-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: var(--radius-md);
+        background-color: var(--bg-tertiary);
+        color: var(--accent-primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .map-container {
+        height: 400px;
+        background-color: var(--border-color);
+        border-radius: var(--radius-lg);
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-secondary);
+        font-family: var(--font-display);
+        overflow: hidden;
+      }
+
+      @media (max-width: 768px) {
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="./logo.png" alt="M.S.Trade International - Kirloskar Oil Engines">
+            </a>
+            
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="spares-service.html" class="nav-link">Spares & Service</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+            </nav>
+
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <span id="theme-icon"></span>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container animate-on-scroll fade-in-up">
+            <h1 class="section-title">Get in Touch</h1>
+            <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto;">Have a question or need a custom quote? Our team of experts is ready to assist you.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Contact Form -->
+                <div class="card animate-on-scroll fade-in-right">
+                    <h2 style="margin-bottom: 1.5rem;">Send us a Message</h2>
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Form submitted successfully!');">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Subject</label>
+                            <select id="subject" class="form-control" required>
+                                <option value="">Select an option</option>
+                                <option value="quote">Request a Quote</option>
+                                <option value="support">Technical Support</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea id="message" class="form-control" rows="5" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info animate-on-scroll fade-in-left">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom: 0.5rem; font-size: 1.25rem;">Our Locations</h3>
+                            <p style="margin: 0; font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Head Office:</strong><br>Nepalgunj-18, Karkando Banke, Near old Yatayat Office</p>
+                            <p style="margin: 0; font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Corporate Office:</strong><br>Sanepa Lalitpur, Kathmandu Nepal</p>
+                            <p style="margin: 0; font-size: 0.9rem;"><strong>Branch Offices:</strong><br>Dhangadhi, Kailali, Dang, Surkhet, Kohalpur</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom: 0.5rem; font-size: 1.25rem;">Contact Numbers</h3>
+                            <p style="margin: 0;">9858020148<br>9851320148</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom: 0.5rem; font-size: 1.25rem;">Email Addresses</h3>
+                            <p style="margin: 0;">Inquiries: info@mstrade.com<br>Support: help@mstrade.com</p>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <!-- Simulated Google Maps Placeholder -->
+                        <div style="text-align: center;">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-bottom: 1rem; opacity: 0.5;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Interactive Map Integration Here</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Simplified) -->
+    <footer class="footer">
+        <div class="container">
+            <div style="text-align: center; padding-top: 2.5rem; margin-top: 2.5rem; border-top: 1px solid var(--border-color);">
+                <h4 style="color: var(--text-secondary); font-size: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin: 0;">Authorized Importer & Dealer For Nepal</h4>
+            </div>
+            <div class="footer-logos" style="border-top: none; padding-top: 1.5rem; margin-top: 0;">
+                <img src="./footer-1.png" alt="Brand Logo 1" class="footer-logo">
+                <img src="./footer-2.jpeg" alt="Brand Logo 2" class="footer-logo">
+                <img src="./footer-3.png" alt="Brand Logo 3" class="footer-logo">
+                <img src="./footer-4.jpeg" alt="Brand Logo 4" class="footer-logo">
+                <img src="./footer-5.jpeg" alt="Brand Logo 5" class="footer-logo">
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 M.S.Trade International. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
