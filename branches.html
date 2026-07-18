@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Branches | M.S.Trade International</title>
+    <meta name="description" content="Find the physical locations, embedded map directions, and direct contact details for all M.S.Trade International branches across Nepal.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+
+    <style>
+      .page-header {
+        padding: 10rem 2rem 6rem;
+        background: var(--bg-tertiary);
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+      }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo logo-text">
+                <div class="logo-main-text">
+                    <span class="logo-ms">M.S.</span>
+                    <span class="logo-trade">Trade</span>
+                </div>
+                <span class="logo-sub">International</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="spares-service.html" class="nav-link">Spares & Service</a>
+                                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-btn" aria-haspopup="true" aria-expanded="false">
+                        Brochure
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                    <div class="dropdown-content brochure-dropdown-box">
+                        <div class="brochure-header">
+                            <h4>Technical Catalogues</h4>
+                            <p>Download premium product brochures</p>
+                        </div>
+                        <div class="brochure-items">
+                            <div class="brochure-card">
+                                <div class="brochure-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                </div>
+                                <div class="brochure-info">
+                                    <h5>Kirloskar Powergen</h5>
+                                    <span>Domestic Powergen Brochure</span>
+                                </div>
+                                <a href="./Domestic_Kirloskar%20Powergen.pdf" download="Domestic_Kirloskar_Powergen_Brochure.pdf" class="brochure-download-btn" aria-label="Download Kirloskar Powergen Brochure" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="branches.html" class="nav-link active">Branches</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+            </nav>
+
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <span id="theme-icon"></span>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container animate-on-scroll fade-in-up">
+            <h1 class="section-title">Our Branches</h1>
+            <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto; color: var(--text-secondary);">Connect with M.S.Trade International at any of our primary physical branch hubs across Nepal.</p>
+        </div>
+    </section>
+
+    <!-- Branch Search and Filter -->
+    <section style="padding: 2.5rem 0 0; background-color: var(--bg-primary);">
+        <div class="container">
+            <div class="filter-container">
+                <div class="search-wrapper">
+                    <svg class="search-icon-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <input type="text" id="branch-search" class="search-input" placeholder="Search by city, province, or contact...">
+                </div>
+                <div class="filter-pills">
+                    <button class="filter-pill active" data-filter="all">All Hubs</button>
+                    <button class="filter-pill" data-filter="head-office">Head Office</button>
+                    <button class="filter-pill" data-filter="corporate">Corporate</button>
+                    <button class="filter-pill" data-filter="branch">Branch Offices</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section class="section" style="background-color: var(--bg-primary);">
+        <div class="container">
+            <div class="branches-grid">
+                
+                <!-- Nepalgunj Branch (Head Office) -->
+                <div class="branch-card animate-on-scroll fade-in-up filterable-item" data-category="head-office" data-name="nepalgunj head office karkando banke nepal">
+                    <div class="branch-map">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Nepalgunj-18,%20Karkando%20Banke,%20Nepal&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            aria-label="Nepalgunj Head Office Map Location">
+                        </iframe>
+                    </div>
+                    <div class="branch-body">
+                        <span class="branch-tag">Head Office</span>
+                        <h2 class="branch-title">Nepalgunj Branch</h2>
+                        <ul class="branch-details">
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span>Nepalgunj-18, Karkando Banke, Near old Yatayat Office, Nepal</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                <span>+977 9858020148, 9802573176</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                <span>info@mstrade.com</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                <span>Sun - Fri: 9:00 AM - 6:00 PM</span>
+                            </li>
+                        </ul>
+                        <div class="branch-footer">
+                            <a href="https://maps.google.com/maps?q=Nepalgunj-18,%20Karkando%20Banke,%20Nepal" class="branch-btn branch-btn-primary" target="_blank">Get Directions</a>
+                            <a href="tel:9858020148" class="branch-btn branch-btn-secondary">Call Branch</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kathmandu Corporate Office -->
+                <div class="branch-card animate-on-scroll fade-in-up delay-100 filterable-item" data-category="corporate" data-name="kathmandu corporate office sanepa lalitpur">
+                    <div class="branch-map">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Sanepa-2,%20Lalitpur,%20Kathmandu,%20Nepal&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            aria-label="Kathmandu Corporate Office Map Location">
+                        </iframe>
+                    </div>
+                    <div class="branch-body">
+                        <span class="branch-tag corporate">Corporate Office</span>
+                        <h2 class="branch-title">Kathmandu Branch</h2>
+                        <ul class="branch-details">
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span>Sanepa-2, Lalitpur, Kathmandu, Nepal</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                <span>+977 9851351949, 9851350780</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                <span>corporate@mstrade.com</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                <span>Sun - Fri: 9:00 AM - 6:00 PM</span>
+                            </li>
+                        </ul>
+                        <div class="branch-footer">
+                            <a href="https://maps.google.com/maps?q=Sanepa-2,%20Lalitpur,%20Kathmandu,%20Nepal" class="branch-btn branch-btn-primary" target="_blank">Get Directions</a>
+                            <a href="tel:9851351949" class="branch-btn branch-btn-secondary">Call Branch</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dhangadhi Branch -->
+                <div class="branch-card animate-on-scroll fade-in-up delay-200 filterable-item" data-category="branch" data-name="dhangadhi branch kailali sudurpaschim nepal">
+                    <div class="branch-map">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Dhangadhi,%20Kailali,%20Sudurpaschim,%20Nepal&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            aria-label="Dhangadhi Branch Map Location">
+                        </iframe>
+                    </div>
+                    <div class="branch-body">
+                        <span class="branch-tag">Branch Office</span>
+                        <h2 class="branch-title">Dhangadhi Branch</h2>
+                        <ul class="branch-details">
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span>Dhangadhi Highway Grid, Kailali, Sudurpaschim, Nepal</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                <span>+977 9858028253, 9802542128</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                <span>dhangadhi@mstrade.com</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                <span>Sun - Fri: 9:00 AM - 6:00 PM</span>
+                            </li>
+                        </ul>
+                        <div class="branch-footer">
+                            <a href="https://maps.google.com/maps?q=Dhangadhi,%20Kailali,%20Sudurpaschim,%20Nepal" class="branch-btn branch-btn-primary" target="_blank">Get Directions</a>
+                            <a href="tel:9858028253" class="branch-btn branch-btn-secondary">Call Branch</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Surkhet Branch -->
+                <div class="branch-card animate-on-scroll fade-in-up delay-300 filterable-item" data-category="branch" data-name="surkhet branch birendranagar karnali nepal">
+                    <div class="branch-map">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Birendranagar,%20Surkhet,%20Karnali,%20Nepal&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            aria-label="Surkhet Branch Map Location">
+                        </iframe>
+                    </div>
+                    <div class="branch-body">
+                        <span class="branch-tag">Branch Office</span>
+                        <h2 class="branch-title">Surkhet Branch</h2>
+                        <ul class="branch-details">
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span>Birendranagar, Surkhet, Karnali Province, Nepal</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                <span>+977 9866958051, 9802542138</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                <span>surkhet@mstrade.com</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                <span>Sun - Fri: 9:00 AM - 6:00 PM</span>
+                            </li>
+                        </ul>
+                        <div class="branch-footer">
+                            <a href="https://maps.google.com/maps?q=Birendranagar,%20Surkhet,%20Karnali,%20Nepal" class="branch-btn branch-btn-primary" target="_blank">Get Directions</a>
+                            <a href="tel:9866958051" class="branch-btn branch-btn-secondary">Call Branch</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kohalpur Branch -->
+                <div class="branch-card animate-on-scroll fade-in-up delay-400 filterable-item" data-category="branch" data-name="kohalpur branch banke bardiya western nepal">
+                    <div class="branch-map">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Kohalpur,%20Banke,%20Nepal&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            aria-label="Kohalpur Branch Map Location">
+                        </iframe>
+                    </div>
+                    <div class="branch-body">
+                        <span class="branch-tag">Branch Office</span>
+                        <h2 class="branch-title">Kohalpur Branch</h2>
+                        <ul class="branch-details">
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span>Kohalpur Crossroads, Banke, Lumbini Province, Nepal</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                <span>081-540280</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                <span>kohalpur@mstrade.com</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                <span>Sun - Fri: 9:00 AM - 6:00 PM</span>
+                            </li>
+                        </ul>
+                        <div class="branch-footer">
+                            <a href="https://maps.google.com/maps?q=Kohalpur,%20Banke,%20Nepal" class="branch-btn branch-btn-primary" target="_blank">Get Directions</a>
+                            <a href="tel:081540280" class="branch-btn branch-btn-secondary">Call Branch</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dang Branch -->
+                <div class="branch-card animate-on-scroll fade-in-up delay-500">
+                    <div class="branch-map">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Ghorahi,%20Dang,%20Nepal&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            aria-label="Dang Branch Map Location">
+                        </iframe>
+                    </div>
+                    <div class="branch-body">
+                        <span class="branch-tag">Branch Office</span>
+                        <h2 class="branch-title">Dang Branch</h2>
+                        <ul class="branch-details">
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span>Ghorahi, Dang, Lumbini Province, Nepal</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                <span>+977 9802542127</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                <span>dang@mstrade.com</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                <span>Sun - Fri: 9:00 AM - 6:00 PM</span>
+                            </li>
+                        </ul>
+                        <div class="branch-footer">
+                            <a href="https://maps.google.com/maps?q=Ghorahi,%20Dang,%20Nepal" class="branch-btn branch-btn-primary" target="_blank">Get Directions</a>
+                            <a href="tel:9802542127" class="branch-btn branch-btn-secondary">Call Branch</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                        <img src="./logo.png" alt="M.S.Trade International - Kirloskar Oil Engines">
+                    </a>
+                    <p style="font-size: 0.875rem;">Premium industrial solutions for power generation, agriculture, and infrastructure worldwide.</p>
+                    <div class="social-links" style="margin-top: 1.5rem;">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html#power-gen">Power Gen</a></li>
+                        <li><a href="products.html#industrial">Industrial Engines</a></li>
+                        <li><a href="products.html#farm">Farm Mechanization</a></li>
+                        <li><a href="products.html#water">Water Solutions</a></li>
+                        <li><a href="products.html#fire">Fire Fighting</a></li>
+                        <li><a href="products.html#motors">Electric Motors</a></li>
+                        <li><a href="products.html#waste">Organic Waste Solutions</a></li>
+                        <li><a href="products.html#fuji-lift">Fuji-Lift</a></li>
+                        <li><a href="products.html#epic-lift">EPIC-Lift</a></li>
+                        <li><a href="products.html#electrical">Electrical Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li style="display: flex; gap: 0.5rem; color: var(--text-secondary);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <div style="display: flex; flex-direction: column;">
+                                <span>9858020148</span>
+                                <span>9802573176</span>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 0.5rem; color: var(--text-secondary);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            info@mstrade.com
+                        </li>
+                        <li style="display: flex; gap: 0.5rem; color: var(--text-secondary);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <span><strong>Head Office:</strong> Nepalgunj-18, Karkando Banke, Near old Yatayat Office</span>
+                                <span><strong>Corporate Office:</strong> Sanepa Lalitpur, Kathmandu Nepal</span>
+                                <span><strong>Branch Offices:</strong> Dhangadhi, Kailali, Dang, Surkhet, Kohalpur</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 2.5rem; margin-top: 2.5rem; border-top: 1px solid var(--border-color);">
+                <h4 style="color: var(--text-secondary); font-size: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin: 0;">Authorized Importer & Dealer For Nepal</h4>
+            </div>
+            <div class="footer-logos" style="border-top: none; padding-top: 1.5rem; margin-top: 0;">
+                <img src="./footer-1.png" alt="Brand Logo 1" class="footer-logo">
+                <img src="./footer-2.jpeg" alt="Brand Logo 2" class="footer-logo">
+                <img src="./footer-3.png" alt="Brand Logo 3" class="footer-logo">
+                <img src="./footer-4.jpeg" alt="Brand Logo 4" class="footer-logo">
+                <img src="./footer-5.jpeg" alt="Brand Logo 5" class="footer-logo">
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 M.S.Trade International. All rights reserved.</p>
+                <div style="display: flex; gap: 1.5rem;">
+                    <a href="#" style="color: var(--text-tertiary); font-size: 0.875rem;">Privacy Policy</a>
+                    <a href="#" style="color: var(--text-tertiary); font-size: 0.875rem;">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const searchInput = document.getElementById('branch-search');
+        const filterPills = document.querySelectorAll('.filter-pill');
+        const items = document.querySelectorAll('.filterable-item');
+
+        function filterBranches() {
+            const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+            const activeFilterEl = document.querySelector('.filter-pill.active');
+            const activeFilter = activeFilterEl ? activeFilterEl.getAttribute('data-filter') : 'all';
+
+            items.forEach(item => {
+                const name = item.getAttribute('data-name').toLowerCase();
+                const category = item.getAttribute('data-category');
+
+                const matchesSearch = name.includes(query);
+                const matchesCategory = activeFilter === 'all' || category === activeFilter;
+
+                if (matchesSearch && matchesCategory) {
+                    item.classList.remove('hidden-item');
+                } else {
+                    item.classList.add('hidden-item');
+                }
+            });
+        }
+
+        if (searchInput) {
+            searchInput.addEventListener('input', filterBranches);
+        }
+
+        filterPills.forEach(pill => {
+            pill.addEventListener('click', () => {
+                filterPills.forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+                filterBranches();
+            });
+        });
+    });
+    </script>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/9779858020148" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#fff" stroke="none"><path d="M12.031 0C5.394 0 0 5.395 0 12.032c0 2.128.555 4.195 1.611 6.012L.032 24l6.096-1.597A11.968 11.968 0 0 0 12.031 24c6.637 0 12.032-5.396 12.032-12.032C24.063 5.395 18.668 0 12.031 0zm0 22.015a9.965 9.965 0 0 1-5.083-1.39l-.364-.216-3.774.989.998-3.68-.237-.376A9.957 9.957 0 0 1 2.062 12.03C2.062 6.529 6.531 2.061 12.031 2.061c5.5 0 9.969 4.468 9.969 9.97 0 5.5-4.469 9.968-9.969 9.968zm5.474-7.464c-.3-.151-1.774-.876-2.05-.976-.275-.1-.475-.15-.675.151-.2.301-.775.976-.95 1.176-.175.2-.35.226-.65.076-1.298-.636-2.485-1.517-3.415-2.529-.395-.427-.246-.644.053-.94.148-.145.3-.301.45-.451.15-.15.2-.25.3-.401.1-.15.05-.276-.025-.426-.075-.15-.675-1.626-.925-2.227-.241-.578-.485-.5-.675-.51h-.575c-.2 0-.525.075-.8.375-.275.3-1.05 1.026-1.05 2.503 0 1.477 1.075 2.903 1.225 3.104.15.2 2.115 3.228 5.126 4.526 1.834.792 2.531.85 3.425.713.91-.14 1.774-.726 2.024-1.427.25-.701.25-1.302.175-1.427-.075-.125-.275-.2-.575-.35z"/></svg>
+    </a>
+
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Generation Solutions | M.S.Trade International</title>
+    <meta name="description" content="Discover M.S.Trade International's premium Power Generation Solutions including standard Gensets, Advanced Gensets, and custom turnkey Projects & Solutions.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+
+    <style>
+      .page-header {
+        padding: 10rem 2rem 6rem;
+        background: var(--bg-tertiary);
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+      }
+      
+      .product-detail-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+        padding: 5rem 0;
+        border-bottom: 1px solid var(--border-color);
+      }
+      
+      .product-detail-grid:nth-child(even) {
+        direction: rtl;
+      }
+      
+      .product-detail-grid:nth-child(even) .product-detail-text {
+        direction: ltr;
+      }
+      
+      .spec-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      
+      .spec-table th, .spec-table td {
+        padding: 0.75rem 1rem;
+        text-align: left;
+        border-bottom: 1px solid var(--border-color);
+      }
+      
+      .spec-table th {
+        background-color: var(--bg-secondary);
+        color: var(--text-primary);
+        font-weight: 700;
+      }
+      
+      .spec-table td {
+        color: var(--text-secondary);
+      }
+      
+      @media (max-width: 768px) {
+        .product-detail-grid {
+          grid-template-columns: 1fr;
+          direction: ltr !important;
+          gap: 2.5rem;
+          padding: 3rem 0;
+        }
+      }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo logo-text">
+                <div class="logo-main-text">
+                    <span class="logo-ms">M.S.</span>
+                    <span class="logo-trade">Trade</span>
+                </div>
+                <span class="logo-sub">International</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="products.html" class="nav-link active">Products</a>
+                <a href="spares-service.html" class="nav-link">Spares & Service</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-btn" aria-haspopup="true" aria-expanded="false">
+                        Brochure
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                    <div class="dropdown-content brochure-dropdown-box">
+                        <div class="brochure-header">
+                            <h4>Technical Catalogues</h4>
+                            <p>Download premium product brochures</p>
+                        </div>
+                        <div class="brochure-items">
+                            <div class="brochure-card">
+                                <div class="brochure-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                </div>
+                                <div class="brochure-info">
+                                    <h5>Kirloskar Powergen</h5>
+                                    <span>Domestic Powergen Brochure</span>
+                                </div>
+                                <a href="./Domestic_Kirloskar%20Powergen.pdf" download="Domestic_Kirloskar_Powergen_Brochure.pdf" class="brochure-download-btn" aria-label="Download Kirloskar Powergen Brochure" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="branches.html" class="nav-link">Branches</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+            </nav>
+
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <span id="theme-icon"></span>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container animate-on-scroll fade-in-up">
+            <span style="font-size: 0.875rem; text-transform: uppercase; font-weight: 700; color: var(--accent-primary); letter-spacing: 2px;">Core Portfolio</span>
+            <h1 class="section-title" style="margin-top: 0.5rem;">Power Generation Portfolio</h1>
+            <p style="font-size: 1.25rem; max-width: 700px; margin: 1rem auto 0; color: var(--text-secondary);">
+                As the authorized partner for Nepal, M.S.Trade International delivers Kirloskar Powergen systems engineered for continuous operation, smart diagnostic monitoring, and environmental sustainability.
+            </p>
+            <div style="margin-top: 2rem;">
+                <a href="products.html" class="btn" style="border: 2px solid var(--accent-primary); color: var(--text-primary); background: transparent; font-weight: 600; padding: 0.75rem 1.5rem;">
+                    &larr; Back to All Products
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Products Sections -->
+    <section class="section" style="background-color: var(--bg-primary);">
+        <div class="container">
+            
+            <!-- Section 1: Standard Gensets -->
+            <div id="gensets" class="product-detail-grid">
+                <div class="product-detail-text animate-on-scroll fade-in-right">
+                    <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--accent-primary); letter-spacing: 1px;">Product Category 01</span>
+                    <h2 class="section-title" style="font-size: 2.25rem; margin-top: 0.5rem;">Standard Gensets</h2>
+                    <p style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.6;">
+                        Our standard diesel gensets deliver reliable electrical backup solutions tailored for homes, retail establishments, financial branches, and private workspaces. Combining a compact layout with class-leading fuel-to-power conversion, they ensure zero operational interruptions.
+                    </p>
+                    <table class="spec-table">
+                        <thead>
+                            <tr>
+                                <th>Specification</th>
+                                <th>Detail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Power Rating</td>
+                                <td>5 kVA to 125 kVA</td>
+                            </tr>
+                            <tr>
+                                <td>Compliance</td>
+                                <td>CPCB IV+ Compliant</td>
+                            </tr>
+                            <tr>
+                                <td>Cooling System</td>
+                                <td>Liquid Cooled / Air Cooled options</td>
+                            </tr>
+                            <tr>
+                                <td>Noise Level</td>
+                                <td>&lt; 75 dBA at 1 meter (Super Silent canopy)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                        <a href="contact.html?details=standard_genset_quote" class="btn btn-primary">Request Pricing</a>
+                        <a href="./Domestic_Kirloskar%20Powergen.pdf" download class="btn" style="border: 1px solid var(--border-color); color: var(--text-primary); background: transparent;">Download Catalog</a>
+                    </div>
+                </div>
+                <div class="product-detail-image animate-on-scroll fade-in-left" style="background: transparent;">
+                    <img src="./power-gen.png" alt="Standard Kirloskar Generator Unit" style="width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                </div>
+            </div>
+
+            <!-- Section 2: Advanced Gensets -->
+            <div id="advanced-gensets" class="product-detail-grid">
+                <div class="product-detail-text animate-on-scroll fade-in-left">
+                    <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--accent-primary); letter-spacing: 1px;">Product Category 02</span>
+                    <h2 class="section-title" style="font-size: 2.25rem; margin-top: 0.5rem;">Advanced Gensets</h2>
+                    <p style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.6;">
+                        For heavy commercial operations, high-rise buildings, manufacturing facilities, and medical complexes, our Advanced Gensets provide reliable, large-scale backup. These systems are equipped with smart remote monitoring (IoT), Advanced Digital AVR for instant voltage regulation, and options for dual-fuel conversion.
+                    </p>
+                    <table class="spec-table">
+                        <thead>
+                            <tr>
+                                <th>Specification</th>
+                                <th>Detail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Power Rating</td>
+                                <td>160 kVA to 1500 kVA</td>
+                            </tr>
+                            <tr>
+                                <td>Diagnostic Controller</td>
+                                <td>Digital Smart Controller with On Board Diagnostics (OBD)</td>
+                            </tr>
+                            <tr>
+                                <td>Fuel System</td>
+                                <td>Mechanical / CRDI Fuel Injection with Dual Fuel support</td>
+                            </tr>
+                            <tr>
+                                <td>Emission Control</td>
+                                <td>CPCB IV+ compliant with maintenance-free EGR/SCR systems</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                        <a href="contact.html?details=advanced_genset_quote" class="btn btn-primary">Request Consultant Quote</a>
+                    </div>
+                </div>
+                <div class="product-detail-image animate-on-scroll fade-in-right" style="background: transparent;">
+                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Advanced High Capacity Industrial Generator" style="width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                </div>
+            </div>
+
+            <!-- Section 3: Project & Solutions -->
+            <div id="projects-solutions" class="product-detail-grid">
+                <div class="product-detail-text animate-on-scroll fade-in-right">
+                    <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--accent-primary); letter-spacing: 1px;">Engineering & Support</span>
+                    <h2 class="section-title" style="font-size: 2.25rem; margin-top: 0.5rem;">Project & Solutions</h2>
+                    <p style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.6;">
+                        Beyond supplying machinery, M.S.Trade International provides custom-engineered turnkey power setups. We design, construct, and install automatic synchronizing panels, automatic mains failure (AMF) controls, custom fuel lines, soundproof acoustic treatments, and structural foundations.
+                    </p>
+                    <ul style="padding-left: 1.25rem; margin: 1.5rem 0; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.75rem; line-height: 1.5;">
+                        <li><strong>AMF & Auto-Transfer System</strong>: Seamless transition back and forth from utility mains grid in milliseconds.</li>
+                        <li><strong>Multi-Genset Synchronization</strong>: Synchronize multiple units to match load distribution demands dynamically.</li>
+                        <li><strong>Soundproofing Acoustics</strong>: Structural acoustics custom-tailored to site layouts, ensuring noise compliance.</li>
+                        <li><strong>Fuel Management Solutions</strong>: Integrated bulk storage tank setups and automated fuel feed systems.</li>
+                    </ul>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                        <a href="contact.html?details=custom_power_solutions" class="btn btn-primary">Connect with Engineer</a>
+                    </div>
+                </div>
+                <div class="product-detail-image animate-on-scroll fade-in-left" style="background: transparent;">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Turnkey Power Project & Switchgear Solutions" style="width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo logo-text" style="margin-bottom: 1.5rem; display: inline-block;">
+                        <div class="logo-main-text">
+                            <span class="logo-ms">M.S.</span>
+                            <span class="logo-trade">Trade</span>
+                        </div>
+                        <span class="logo-sub">International</span>
+                    </a>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                        Leading provider of reliable power gen, heavy industrial engines, modern agricultural tillers, and specialized water systems across Nepal.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products Portfolio</a></li>
+                        <li><a href="spares-service.html">Spares & Service</a></li>
+                        <li><a href="branches.html">Our Branches</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li style="display: flex; gap: 0.5rem; color: var(--text-secondary);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <div style="display: flex; flex-direction: column;">
+                                <span>9858020148</span>
+                                <span>9802573176</span>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 0.5rem; color: var(--text-secondary);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            info@mstrade.com
+                        </li>
+                        <li style="display: flex; gap: 0.5rem; color: var(--text-secondary);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <span><strong>Head Office:</strong> Nepalgunj-18, Karkando Banke, Near old Yatayat Office</span>
+                                <span><strong>Corporate Office:</strong> Sanepa Lalitpur, Kathmandu Nepal</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 2.5rem; margin-top: 2.5rem; border-top: 1px solid var(--border-color);">
+                <h4 style="color: var(--text-secondary); font-size: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin: 0;">Authorized Importer & Dealer For Nepal</h4>
+            </div>
+            <div class="footer-logos" style="border-top: none; padding-top: 1.5rem; margin-top: 0;">
+                <img src="./footer-1.png" alt="Brand Logo 1" class="footer-logo">
+                <img src="./footer-2.jpeg" alt="Brand Logo 2" class="footer-logo">
+                <img src="./footer-3.png" alt="Brand Logo 3" class="footer-logo">
+                <img src="./footer-4.jpeg" alt="Brand Logo 4" class="footer-logo">
+                <img src="./footer-5.jpeg" alt="Brand Logo 5" class="footer-logo">
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 M.S.Trade International. All rights reserved.</p>
+                <div style="display: flex; gap: 1.5rem;">
+                    <a href="#" style="color: var(--text-tertiary); font-size: 0.875rem;">Privacy Policy</a>
+                    <a href="#" style="color: var(--text-tertiary); font-size: 0.875rem;">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/9779858020148" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#fff" stroke="none"><path d="M12.031 0C5.394 0 0 5.395 0 12.032c0 2.128.555 4.195 1.611 6.012L.032 24l6.096-1.597A11.968 11.968 0 0 0 12.031 24c6.637 0 12.032-5.396 12.032-12.032C24.063 5.395 18.668 0 12.031 0zm0 22.015a9.965 9.965 0 0 1-5.083-1.39l-.364-.216-3.774.989.998-3.68-.237-.376A9.957 9.957 0 0 1 2.062 12.03C2.062 6.529 6.531 2.061 12.031 2.061c5.5 0 9.969 4.468 9.969 9.97 0 5.5-4.469 9.968-9.969 9.968zm5.474-7.464c-.3-.151-1.774-.876-2.05-.976-.275-.1-.475-.15-.675.151-.2.301-.775.976-.95 1.176-.175.2-.35.226-.65.076-1.298-.636-2.485-1.517-3.415-2.529-.395-.427-.246-.644.053-.94.148-.145.3-.301.45-.451.15-.15.2-.25.3-.401.1-.15.05-.276-.025-.426-.075-.15-.675-1.626-.925-2.227-.241-.578-.485-.5-.675-.51h-.575c-.2 0-.525.075-.8.375-.275.3-1.05 1.026-1.05 2.503 0 1.477 1.075 2.903 1.225 3.104.15.2 2.115 3.228 5.126 4.526 1.834.792 2.531.85 3.425.713.91-.14 1.774-.726 2.024-1.427.25-.701.25-1.302.175-1.427-.075-.125-.275-.2-.575-.35z"/></svg>
+    </a>
+
+</body>
+</html>

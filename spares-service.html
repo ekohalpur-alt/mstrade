@@ -86,8 +86,12 @@
     <!-- Header Navigation -->
     <header class="header">
         <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="./logo.png" alt="M.S.Trade International - Kirloskar Oil Engines">
+            <a href="index.html" class="logo logo-text">
+                <div class="logo-main-text">
+                    <span class="logo-ms">M.S.</span>
+                    <span class="logo-trade">Trade</span>
+                </div>
+                <span class="logo-sub">International</span>
             </a>
             
             <nav class="nav-links">
@@ -95,6 +99,34 @@
                 <a href="about.html" class="nav-link">About</a>
                 <a href="products.html" class="nav-link">Products</a>
                 <a href="spares-service.html" class="nav-link active">Spares & Service</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-btn" aria-haspopup="true" aria-expanded="false">
+                        Brochure
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                    <div class="dropdown-content brochure-dropdown-box">
+                        <div class="brochure-header">
+                            <h4>Technical Catalogues</h4>
+                            <p>Download premium product brochures</p>
+                        </div>
+                        <div class="brochure-items">
+                            <div class="brochure-card">
+                                <div class="brochure-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                </div>
+                                <div class="brochure-info">
+                                    <h5>Kirloskar Powergen</h5>
+                                    <span>Domestic Powergen Brochure</span>
+                                </div>
+                                <a href="./Domestic_Kirloskar%20Powergen.pdf" download="Domestic_Kirloskar_Powergen_Brochure.pdf" class="brochure-download-btn" aria-label="Download Kirloskar Powergen Brochure" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="branches.html" class="nav-link">Branches</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
                 <a href="contact.html" class="nav-link">Contact</a>
                 <a href="contact.html" class="btn btn-primary">Get a Quote</a>
             </nav>
@@ -112,7 +144,7 @@
     <!-- Page Header Slideshow -->
     <section class="slideshow-container">
         <div class="slide active">
-            <img src="./slide-1.jpeg" class="slide-bg" alt="Slide 1">
+            <img src="./slide-1.png" class="slide-bg" alt="Slide 1">
             <div class="slide-content animate-on-scroll fade-in-up">
                 <h1 class="section-title" style="color: white;">Spares & Service</h1>
                 <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto; color: white;">Comprehensive Maintenance & Genuine Parts for optimal performance.</p>
@@ -122,7 +154,7 @@
             </div>
         </div>
         <div class="slide">
-            <img src="./slide-2.jpeg" class="slide-bg" alt="Slide 2">
+            <img src="./slide-2.png" class="slide-bg" alt="Slide 2">
             <div class="slide-content">
                 <h1 class="section-title" style="color: white;">Reliable Support 24/7</h1>
                 <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto; color: white;">Expert engineers and authentic parts for all your industrial needs.</p>
@@ -200,6 +232,55 @@
         </div>
     </section>
 
+    <!-- Dedicated Helplines Long Box Layout -->
+    <section id="support" class="section" style="padding: 3rem 0 1rem; background-color: var(--bg-primary);">
+        <div class="container">
+            <div class="animate-on-scroll fade-in-up" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(14, 165, 233, 0.05)); border: 2px solid var(--border-color); border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: var(--shadow-lg); position: relative; overflow: hidden;">
+                <!-- Decorative subtle brand green / accent primary radial background glow -->
+                <div style="position: absolute; top: -50%; left: -20%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0) 70%); pointer-events: none;"></div>
+                <div style="position: absolute; bottom: -50%; right: -20%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(14, 165, 233, 0.1) 0%, rgba(14, 165, 233, 0) 70%); pointer-events: none;"></div>
+                
+                <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem; position: relative; z-index: 1;">
+                    <!-- Left: Header info -->
+                    <div style="flex: 1 1 350px;">
+                        <span style="display: inline-block; font-size: 0.8rem; background-color: var(--brand-green); color: white; padding: 0.25rem 0.75rem; border-radius: var(--radius-full); font-weight: bold; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 1px;">24/7 Dedicated Support Hub</span>
+                        <h2 style="font-size: 1.85rem; margin: 0 0 0.5rem; color: var(--text-primary);">Service & Support Helpline</h2>
+                        <p style="margin: 0; color: var(--text-secondary); font-size: 1.05rem;">Connect with our dedicated support team instantly for service, maintenance, and AMC queries.</p>
+                    </div>
+                    
+                    <!-- Right: Service / AMC Phone number -->
+                    <div style="display: flex; flex-wrap: wrap; gap: 2rem; flex: 1 1 300px; justify-content: flex-end;">
+                        
+                        <!-- Col 3: Service / AMC -->
+                        <div style="background-color: var(--bg-secondary); border: 1px solid var(--brand-green); border-radius: var(--radius-md); padding: 1.25rem; min-width: 220px; flex: 1;">
+                            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                                <div style="color: var(--brand-green); background-color: rgba(16, 185, 129, 0.1); width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                                </div>
+                                <h3 style="font-size: 0.95rem; margin: 0; color: var(--brand-green); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Service / AMC</h3>
+                            </div>
+                            <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                                <div>
+                                    <span style="display: block; font-size: 0.72rem; color: var(--text-secondary); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">Support Line 1</span>
+                                    <a href="tel:9802542122" style="color: var(--text-primary); font-size: 1.05rem; font-weight: 700; display: block; transition: color var(--transition-fast);">9802542122</a>
+                                </div>
+                                <div>
+                                    <span style="display: block; font-size: 0.72rem; color: var(--text-secondary); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">Support Line 2</span>
+                                    <a href="tel:9802573185" style="color: var(--text-primary); font-size: 1.05rem; font-weight: 700; display: block; transition: color var(--transition-fast);">9802573185</a>
+                                </div>
+                                <div>
+                                    <span style="display: block; font-size: 0.72rem; color: var(--text-secondary); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">Support Line 3</span>
+                                    <a href="tel:9858028250" style="color: var(--text-primary); font-size: 1.05rem; font-weight: 700; display: block; transition: color var(--transition-fast);">9858028250</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Service 1: Kirloskar Care -->
     <section id="kirloskar-care" class="service-block">
         <div class="container">
@@ -214,8 +295,8 @@
                     </ul>
                     <a href="contact.html" class="btn btn-primary" style="margin-top: 1.5rem;">Request Service</a>
                 </div>
-                <div class="service-image animate-on-scroll fade-in-left">
-                    [Kirloskar Care Image Placeholder]
+                <div class="service-image animate-on-scroll fade-in-left" style="background: transparent; box-shadow: none; height: auto; padding: 1rem;">
+                    <img src="./slide-1.png" alt="Kirloskar Care (Gensets & Engines)" style="width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
                 </div>
             </div>
         </div>
@@ -235,8 +316,8 @@
                     </ul>
                     <a href="contact.html" class="btn btn-primary" style="margin-top: 1.5rem;">Request Service</a>
                 </div>
-                <div class="service-image animate-on-scroll fade-in-right">
-                    [Farm Service Image Placeholder]
+                <div class="service-image animate-on-scroll fade-in-right" style="background: transparent; box-shadow: none; height: auto; padding: 1rem;">
+                    <img src="./farmm.png" alt="Farm Mechanization Spares" style="width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
                 </div>
             </div>
         </div>
@@ -256,8 +337,8 @@
                     </ul>
                     <a href="contact.html" class="btn btn-primary" style="margin-top: 1.5rem;">Request Service</a>
                 </div>
-                <div class="service-image animate-on-scroll fade-in-left">
-                    [Water Service Image Placeholder]
+                <div class="service-image animate-on-scroll fade-in-left" style="background: transparent; box-shadow: none; height: auto; padding: 1rem;">
+                    <img src="./slide-4.png" alt="Water Solutions Service" style="width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
                 </div>
             </div>
         </div>
@@ -333,11 +414,13 @@
                         <li><a href="products.html#industrial">Industrial Engines</a></li>
                         <li><a href="products.html#farm">Farm Mechanization</a></li>
                         <li><a href="products.html#water">Water Solutions</a></li>
+
                         <li><a href="products.html#fire">Fire Fighting</a></li>
                         <li><a href="products.html#motors">Electric Motors</a></li>
                         <li><a href="products.html#waste">Organic Waste Solutions</a></li>
                         <li><a href="products.html#fuji-lift">Fuji-Lift</a></li>
                         <li><a href="products.html#epic-lift">EPIC-Lift</a></li>
+                        <li><a href="products.html#electrical">Electrical Solutions</a></li>
                     </ul>
                 </div>
 
@@ -359,7 +442,7 @@
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                             <div style="display: flex; flex-direction: column;">
                                 <span>9858020148</span>
-                                <span>9851320148</span>
+                                <span>9802573176</span>
                             </div>
                         </li>
                         <li style="display: flex; gap: 0.5rem; color: var(--text-secondary);">
@@ -405,8 +488,17 @@
 
     <!-- JS -->
     <script src="./js/main.js"></script>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/9779858020148" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#fff" stroke="none"><path d="M12.031 0C5.394 0 0 5.395 0 12.032c0 2.128.555 4.195 1.611 6.012L.032 24l6.096-1.597A11.968 11.968 0 0 0 12.031 24c6.637 0 12.032-5.396 12.032-12.032C24.063 5.395 18.668 0 12.031 0zm0 22.015a9.965 9.965 0 0 1-5.083-1.39l-.364-.216-3.774.989.998-3.68-.237-.376A9.957 9.957 0 0 1 2.062 12.03C2.062 6.529 6.531 2.061 12.031 2.061c5.5 0 9.969 4.468 9.969 9.97 0 5.5-4.469 9.968-9.969 9.968zm5.474-7.464c-.3-.151-1.774-.876-2.05-.976-.275-.1-.475-.15-.675.151-.2.301-.775.976-.95 1.176-.175.2-.35.226-.65.076-1.298-.636-2.485-1.517-3.415-2.529-.395-.427-.246-.644.053-.94.148-.145.3-.301.45-.451.15-.15.2-.25.3-.401.1-.15.05-.276-.025-.426-.075-.15-.675-1.626-.925-2.227-.241-.578-.485-.5-.675-.51h-.575c-.2 0-.525.075-.8.375-.275.3-1.05 1.026-1.05 2.503 0 1.477 1.075 2.903 1.225 3.104.15.2 2.115 3.228 5.126 4.526 1.834.792 2.531.85 3.425.713.91-.14 1.774-.726 2.024-1.427.25-.701.25-1.302.175-1.427-.075-.125-.275-.2-.575-.35z"/></svg>
+    </a>
+
 </body>
 </html>
+
+
+
+
 
 
 

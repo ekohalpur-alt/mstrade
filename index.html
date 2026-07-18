@@ -149,8 +149,12 @@
     <!-- Header Navigation -->
     <header class="header">
         <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="./logo.png" alt="M.S.Trade International - Kirloskar Oil Engines">
+            <a href="index.html" class="logo logo-text">
+                <div class="logo-main-text">
+                    <span class="logo-ms">M.S.</span>
+                    <span class="logo-trade">Trade</span>
+                </div>
+                <span class="logo-sub">International</span>
             </a>
             
             <nav class="nav-links">
@@ -158,6 +162,34 @@
                 <a href="about.html" class="nav-link">About</a>
                 <a href="products.html" class="nav-link">Products</a>
                 <a href="spares-service.html" class="nav-link">Spares & Service</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-btn" aria-haspopup="true" aria-expanded="false">
+                        Brochure
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                    <div class="dropdown-content brochure-dropdown-box">
+                        <div class="brochure-header">
+                            <h4>Technical Catalogues</h4>
+                            <p>Download premium product brochures</p>
+                        </div>
+                        <div class="brochure-items">
+                            <div class="brochure-card">
+                                <div class="brochure-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                </div>
+                                <div class="brochure-info">
+                                    <h5>Kirloskar Powergen</h5>
+                                    <span>Domestic Powergen Brochure</span>
+                                </div>
+                                <a href="./Domestic_Kirloskar%20Powergen.pdf" download="Domestic_Kirloskar_Powergen_Brochure.pdf" class="brochure-download-btn" aria-label="Download Kirloskar Powergen Brochure" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="branches.html" class="nav-link">Branches</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
                 <a href="contact.html" class="nav-link">Contact</a>
                 <a href="contact.html" class="btn btn-primary">Get a Quote</a>
             </nav>
@@ -253,6 +285,137 @@
                     <a href="products.html#water" style="display:inline-flex; align-items:center; gap:0.5rem; margin-top:1rem; font-weight:600;">
                         Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Generator Sizing Calculator Section -->
+    <section id="kva-calculator" class="section" style="border-top: 1px solid var(--border-color); background-color: var(--bg-primary);">
+        <div class="container">
+            <div class="section-header animate-on-scroll fade-in-up">
+                <span class="section-subtitle">Sizing Tool</span>
+                <h2 class="section-title">Generator Sizing & kVA Calculator</h2>
+                <p class="calc-subtitle">Estimate your total power requirements and find the perfect Kirloskar generator rating for your home, office, or industrial site.</p>
+            </div>
+
+            <div class="calculator-card animate-on-scroll fade-in-up">
+                <div class="calc-grid">
+                    <!-- Left: Appliances List -->
+                    <div class="appliance-list">
+                        <!-- Appliance 1: AC -->
+                        <div class="appliance-row">
+                            <div class="appliance-info">
+                                <span class="appliance-name">Air Conditioner (1.5 Ton)</span>
+                                <span class="appliance-watts">1800W running (3600W starting)</span>
+                            </div>
+                            <div class="quantity-control">
+                                <button type="button" class="qty-btn" data-type="ac" data-action="minus">-</button>
+                                <span id="qty-ac" class="qty-val">0</span>
+                                <button type="button" class="qty-btn" data-type="ac" data-action="plus">+</button>
+                            </div>
+                        </div>
+                        <!-- Appliance 2: Fridge -->
+                        <div class="appliance-row">
+                            <div class="appliance-info">
+                                <span class="appliance-name">Refrigerator / Freezer</span>
+                                <span class="appliance-watts">400W running (1200W starting)</span>
+                            </div>
+                            <div class="quantity-control">
+                                <button type="button" class="qty-btn" data-type="fridge" data-action="minus">-</button>
+                                <span id="qty-fridge" class="qty-val">0</span>
+                                <button type="button" class="qty-btn" data-type="fridge" data-action="plus">+</button>
+                            </div>
+                        </div>
+                        <!-- Appliance 3: Water Pump -->
+                        <div class="appliance-row">
+                            <div class="appliance-info">
+                                <span class="appliance-name">Water Pump (1 HP)</span>
+                                <span class="appliance-watts">750W running (2200W starting)</span>
+                            </div>
+                            <div class="quantity-control">
+                                <button type="button" class="qty-btn" data-type="pump" data-action="minus">-</button>
+                                <span id="qty-pump" class="qty-val">0</span>
+                                <button type="button" class="qty-btn" data-type="pump" data-action="plus">+</button>
+                            </div>
+                        </div>
+                        <!-- Appliance 4: Lights -->
+                        <div class="appliance-row">
+                            <div class="appliance-info">
+                                <span class="appliance-name">Lighting & Fans (Grid total)</span>
+                                <span class="appliance-watts">300W typical load</span>
+                            </div>
+                            <div class="quantity-control">
+                                <button type="button" class="qty-btn" data-type="lights" data-action="minus">-</button>
+                                <span id="qty-lights" class="qty-val">0</span>
+                                <button type="button" class="qty-btn" data-type="lights" data-action="plus">+</button>
+                            </div>
+                        </div>
+                        <!-- Appliance 5: Computer -->
+                        <div class="appliance-row">
+                            <div class="appliance-info">
+                                <span class="appliance-name">Desktop Computer</span>
+                                <span class="appliance-watts">250W each</span>
+                            </div>
+                            <div class="quantity-control">
+                                <button type="button" class="qty-btn" data-type="computer" data-action="minus">-</button>
+                                <span id="qty-computer" class="qty-val">0</span>
+                                <button type="button" class="qty-btn" data-type="computer" data-action="plus">+</button>
+                            </div>
+                        </div>
+                        <!-- Appliance 6: Heater -->
+                        <div class="appliance-row">
+                            <div class="appliance-info">
+                                <span class="appliance-name">Water Heater / Geyser</span>
+                                <span class="appliance-watts">2000W each</span>
+                            </div>
+                            <div class="quantity-control">
+                                <button type="button" class="qty-btn" data-type="heater" data-action="minus">-</button>
+                                <span id="qty-heater" class="qty-val">0</span>
+                                <button type="button" class="qty-btn" data-type="heater" data-action="plus">+</button>
+                            </div>
+                        </div>
+                        <!-- Appliance 7: Lift -->
+                        <div class="appliance-row">
+                            <div class="appliance-info">
+                                <span class="appliance-name">Elevator / Lift (Small)</span>
+                                <span class="appliance-watts">7500W running (15000W starting)</span>
+                            </div>
+                            <div class="quantity-control">
+                                <button type="button" class="qty-btn" data-type="lift" data-action="minus">-</button>
+                                <span id="qty-lift" class="qty-val">0</span>
+                                <button type="button" class="qty-btn" data-type="lift" data-action="plus">+</button>
+                            </div>
+                        </div>
+                        <!-- Appliance 8: Machinery -->
+                        <div class="appliance-row">
+                            <div class="appliance-info">
+                                <span class="appliance-name">Heavy Machinery / Motors</span>
+                                <span class="appliance-watts">15000W running (30000W starting)</span>
+                            </div>
+                            <div class="quantity-control">
+                                <button type="button" class="qty-btn" data-type="machinery" data-action="minus">-</button>
+                                <span id="qty-machinery" class="qty-val">0</span>
+                                <button type="button" class="qty-btn" data-type="machinery" data-action="plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Results Panel -->
+                    <div class="calc-results">
+                        <div class="result-label">ESTIMATED POWER REQUIREMENT</div>
+                        <div id="calc-dial" class="result-dial">
+                            <div class="dial-content">
+                                <span id="calc-kva-value" class="dial-value">0</span>
+                                <span class="dial-unit">kVA</span>
+                            </div>
+                        </div>
+                        <div id="calc-result-text" class="result-value-text">Select appliances to estimate</div>
+                        <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.4;">
+                            *Calculations include starting surge protection for motor loads and a 25% safety buffer for engine efficiency.
+                        </p>
+                        <a href="contact.html" id="calc-quote-btn" class="btn btn-primary calc-btn">Get Instant Quote</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -403,8 +566,17 @@
 
     <!-- JS -->
     <script src="./js/main.js"></script>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/9779858020148" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#fff" stroke="none"><path d="M12.031 0C5.394 0 0 5.395 0 12.032c0 2.128.555 4.195 1.611 6.012L.032 24l6.096-1.597A11.968 11.968 0 0 0 12.031 24c6.637 0 12.032-5.396 12.032-12.032C24.063 5.395 18.668 0 12.031 0zm0 22.015a9.965 9.965 0 0 1-5.083-1.39l-.364-.216-3.774.989.998-3.68-.237-.376A9.957 9.957 0 0 1 2.062 12.03C2.062 6.529 6.531 2.061 12.031 2.061c5.5 0 9.969 4.468 9.969 9.97 0 5.5-4.469 9.968-9.969 9.968zm5.474-7.464c-.3-.151-1.774-.876-2.05-.976-.275-.1-.475-.15-.675.151-.2.301-.775.976-.95 1.176-.175.2-.35.226-.65.076-1.298-.636-2.485-1.517-3.415-2.529-.395-.427-.246-.644.053-.94.148-.145.3-.301.45-.451.15-.15.2-.25.3-.401.1-.15.05-.276-.025-.426-.075-.15-.675-1.626-.925-2.227-.241-.578-.485-.5-.675-.51h-.575c-.2 0-.525.075-.8.375-.275.3-1.05 1.026-1.05 2.503 0 1.477 1.075 2.903 1.225 3.104.15.2 2.115 3.228 5.126 4.526 1.834.792 2.531.85 3.425.713.91-.14 1.774-.726 2.024-1.427.25-.701.25-1.302.175-1.427-.075-.125-.275-.2-.575-.35z"/></svg>
+    </a>
+
 </body>
 </html>
+
+
+
+
 
 
 
